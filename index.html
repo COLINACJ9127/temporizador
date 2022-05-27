@@ -14,23 +14,30 @@
 </head>
 <body>
     <header>
-        <ul>
-            <li><button class="button header--button" title="cronometer"> <i class="fa-solid fa-clock"></i> </button></li>
-            <li><button class="button header--button" title="timer "> <i class="fa-solid fa-timer"></i> </button></li>
-            <li><button class="button header--button" title="Alarma"> <i class="fa-solid fa-timer"></i> </button></li>
-        </ul>
+        <nav class="header-nav">
+            <ul class="hedaer-nav__list">
+                <li><button class="button header--button" title="cronometer"> <i class="fa-solid fa-clock"></i> </button></li>
+                <li><button class="button header--button" title="timer "> <i class="fa-solid fa-hourglass"></i> </button></li>
+                <li><button class="button header--button" title="Alarma"> <p>alarma</p></button></li>
+            </ul>
+        </nav>
     </header>
+
     <section class="hero" id="principal">
-        <h1 class="hero--title" > Cronometro</h1>
+        <h1 class="hero--title" > CRONOMETRO</h1>
         <div class="hero--time">
             <p id="time"> <span id="minutes">00</span> <span>:</span> <span id="seconds">00</span>  </p>
         </div>
-        <div class="hero--buttons">
-            <button class="button header--butons" type="button"> start</button>
-            <button class="button header--butons" type="button"> stop</button>
-          
+
+        <div class="buttons-play-stop">
+            <div class="hero--buttons">
+                <button onclick="startChronometer()" class="button header--butons" type="button"> <i class="fa-solid fa-play"></i> </button>
+                <button onclick="stopChronometer ()" class="button header--butons" type="button"> <i class="fa-solid fa-stop"></i></button>
+                <button onclick="resetIChronometer()" class="button header--butons" type="button"> <p>Reset</p> </button>
+              
+            </div>
         </div>
     </section>
-    
+    <script src="./index.js"></script>
 </body>
 </html>
