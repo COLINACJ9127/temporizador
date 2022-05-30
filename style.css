@@ -39,6 +39,7 @@ header{
     cursor: pointer;
     border: 1px solid white; 
     transition: 700ms;
+    color: white; 
 }
 
 /* Hover */
