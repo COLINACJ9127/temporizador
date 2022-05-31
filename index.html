@@ -16,9 +16,9 @@
     <header>
         <nav class="header-nav">
             <ul class="hedaer-nav__list">
-                <li><button class="button header--button" id="chronometer-button" title="cronometer"> <i class="fa-solid fa-clock"></i> </button></li>
+                <li><button class="button header--button" id="chronometer-button" onclick="executeChronometer()" title="cronometer"> <i class="fa-solid fa-clock"></i> </button></li>
                 <li><button class="button header--button" id="timer-button" onclick="executeTimer()" title="timer "> <i class="fa-solid fa-hourglass"></i> </button></li>
-                <li><button class="button header--button" title="Alarma"> <p>alarma</p></button></li>
+                <li><button class="button header--button" id="pomodoro-button" onclick="executePomodoro()" title="Alarma"> <i class="fa-solid fa-graduation-cap"></i></button></li>
             </ul>
         </nav>
     </header>
@@ -33,7 +33,7 @@
             <div class="hero--buttons">
                 <button onclick="startChronometer()" class="button header--butons" type="button"> <i class="fa-solid fa-play"></i> </button>
                 <button onclick="stopChronometer ()" class="button header--butons" type="button"> <i class="fa-solid fa-stop"></i></button>
-                <button onclick="resetIChronometer()" class="button header--butons" type="button"> <p>Reset</p> </button>
+                <button onclick="resetIChronometer()" class="button header--butons" type="button"> <i class="fa-solid fa-backward"></i> </button>
               
             </div>
         </div>
